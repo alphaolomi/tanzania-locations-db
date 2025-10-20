@@ -10,45 +10,44 @@ Very useful for easily implementing Tanzania locations in any application.
 
 What you need before running the code.
 
-1. Install & Start Postgresql Db Service
+1. Install & Start MySQL 8+ Service
 
 2. Extract everything
 
-- Give setup.sh execute permission with `chmod +x ./setup.sh`
+- Give setup.sh execute permission with `chmod +x ./setup.sh`.
 
-- Run the setup file with `./setup.sh`
+- Run the setup file with `./setup.sh`.
 
 - Close PL/PgSQL prompts with `:q` whenever prompted, this will happen in the last phrase of data extraction, which you
-  will need to close the prompt for it to continue eg. "save_regions" etc..
+    will need to close the prompt for it to continue eg. "save_regions" etc..
 
-3. This will create a database called locations that will have user postgres and have all the data.
+3. This will create a database called `locations` (user `locations`) and load all data.
 
-4. You can check the data with `psql -U postgres -d locations` and run queries like `SELECT * FROM regions;` to verify
-   the data.
+4. You can check the data with `mysql -u locations -p locations` and run `SELECT * FROM regions;` to verify
+   the data is present.
 
 ## For Docker
 
-1. Pull image 
-```
-docker pull archnoob/tanzania-locations-db
-```
+1. Create a .env file based on the provided template:
 
-2. After pulling the image, create a .env file based on the provided template:
-```
+```bash
 cp env.example .env
 ```
-3. Run with Docker Compose (Recommended)
-```
+
+2. Run with Docker Compose (Recommended)
+
+```bash
 docker-compose up -d
 ```
-4. Or run mannually (with env vars)
-```
-docker run -d \
-  --name tanzania-locations \
-  -e POSTGRES_USER=postgres \
-  -e POSTGRES_PASSWORD=password \
-  -e POSTGRES_DB=locations \
-  archnoob/tanzania-locations-db
+
+3. Environment variables
+
+```ini
+MYSQL_DATABASE=locations
+MYSQL_USER=locations
+MYSQL_PASSWORD=locations_password
+MYSQL_ROOT_PASSWORD=password
+MYSQL_HOST_PORT=3306
 ```
 
 ### Credits

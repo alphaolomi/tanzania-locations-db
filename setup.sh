@@ -1,26 +1,40 @@
 #!/bin/bash
 set -e
 
-DB_NAME="${POSTGRES_DB:-locations}"
-DB_USER="${POSTGRES_USER:-postgres}"
+DB_NAME="${MYSQL_DATABASE:-locations}"
+DB_USER="${MYSQL_USER:-root}"
+DB_PASSWORD="${MYSQL_PASSWORD:-$MYSQL_ROOT_PASSWORD}"
+MYSQL_SOCKET="/var/run/mysqld/mysqld.sock"
 
 DATA_DIR="/location_files"
 
-echo "🌍 Setting up Tanzania Locations DB..."
+echo "🌍 Setting up Tanzania Locations DB (MySQL)..."
 
-echo "Waiting for DB to be ready..."
-until pg_isready -U "$DB_USER"; do
-  sleep 1
+echo "Waiting for DB socket..."
+until [ -S "$MYSQL_SOCKET" ]; do
+  echo "Waiting for MySQL socket..."
+  sleep 2
 done
 
-echo "Creating database..."
-createdb --encoding UTF8 --owner "$DB_USER" "$DB_NAME" || echo "⚠️  Database already exists, skipping creation."
+# Wait a bit more for MySQL to be fully ready
+sleep 3
+
+mysql_exec() {
+  mysql --protocol=socket -S "$MYSQL_SOCKET" -u"$DB_USER" -p"$DB_PASSWORD" "$DB_NAME" -e "$1" 2>/dev/null
+}
+
+mysql_run_file() {
+  mysql --protocol=socket -S "$MYSQL_SOCKET" -u"$DB_USER" -p"$DB_PASSWORD" "$DB_NAME" < "$1" 2>/dev/null
+}
+
+echo "Creating database if not exists..."
+mysql --protocol=socket -S "$MYSQL_SOCKET" -u"$DB_USER" -p"$DB_PASSWORD" -e "CREATE DATABASE IF NOT EXISTS \`$DB_NAME\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null
 
 echo "Creating tables..."
-psql -U "$DB_USER" -d "$DB_NAME" -f /sql_scripts/tables_creation.sql
+mysql_run_file /docker-entrypoint-initdb.d/01_tables.sql
 
 echo "Inserting countries..."
-psql -U "$DB_USER" -d "$DB_NAME" -f /sql_scripts/countries.sql
+mysql_run_file /docker-entrypoint-initdb.d/02_countries.sql
 
 echo "📄 Importing CSVs from: $DATA_DIR"
 
@@ -34,13 +48,17 @@ fi
 for csv_file in "${CSV_FILES[@]}"; do
   region_file=$(basename "$csv_file")
   echo "  ➕ Importing $region_file..."
-  psql -U "$DB_USER" -d "$DB_NAME" -c "\copy general (region, regioncode, district, districtcode, ward, wardcode, street, places) FROM '$csv_file' WITH (FORMAT csv, HEADER true)"
+  mysql --local-infile=1 --protocol=socket -S "$MYSQL_SOCKET" -u"$DB_USER" -p"$DB_PASSWORD" "$DB_NAME" \
+    -e "LOAD DATA LOCAL INFILE '$csv_file' INTO TABLE general \
+        FIELDS TERMINATED BY ',' ENCLOSED BY '\"' \
+        LINES TERMINATED BY '\n' IGNORE 1 ROWS \
+        (region, regioncode, district, districtcode, ward, wardcode, street, places);" 2>/dev/null
 done
 
 echo "🛠 Updating country_id..."
-psql -U "$DB_USER" -d "$DB_NAME" -c "UPDATE general SET country_id = 210;"
+mysql_exec "UPDATE general SET country_id = 210;"
 
 echo "🧠 Running extract.sql..."
-psql -U "$DB_USER" -d "$DB_NAME" -f /sql_scripts/extract.sql
+mysql_run_file /docker-entrypoint-initdb.d/04_extract.sql
 
-echo "✅ Tanzania Locations DB setup complete!"
+echo "✅ Tanzania Locations DB setup complete (MySQL)!"
