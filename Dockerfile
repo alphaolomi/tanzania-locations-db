@@ -1,12 +1,13 @@
-FROM postgres:17.4
+FROM mysql:8.4
 
-RUN apt-get update && apt-get install -y postgresql-client && rm -rf /var/lib/apt/lists/*
+WORKDIR /docker-entrypoint-initdb.d
 
-WORKDIR /sql_scripts
-COPY sql-scripts/ .
+# Ensure init order: 01 schema -> 02 countries -> 03 setup (CSV) -> 04 extract
+COPY sql-scripts/tables_creation.sql ./01_tables.sql
+COPY sql-scripts/countries.sql ./02_countries.sql
+COPY setup.sh ./03_setup.sh
+COPY sql-scripts/extract.sql ./04_extract.sql
+RUN chmod +x ./03_setup.sh
 
-WORKDIR /location_files
-COPY location-files .
-
-COPY setup.sh /docker-entrypoint-initdb.d/
-RUN chmod +x /docker-entrypoint-initdb.d/setup.sh
+WORKDIR /
+COPY location-files /location_files
