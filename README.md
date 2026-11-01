@@ -11,7 +11,7 @@ accurate list of Tanzanian locations.
 | Regions | 26 |
 | Districts | 158 |
 | Wards | 3,945 |
-| Places (streets and named places, unique per ward) | 75,020 |
+| Places (streets and named places, unique per ward) | 75,013 |
 | Source rows (`general`) | 68,571 |
 
 ## Quick start (Docker)
@@ -61,8 +61,8 @@ countries ─┐
 - **`general`** is the raw import: one row per CSV line, with the region, district and ward names and
   codes, plus the street and place.
 - **`regions`, `districts`, `wards`** hold one row per code, keyed by that code.
-- **`places`** holds one row for each distinct street or place name within a ward. Names are compared
-  case-sensitively.
+- **`places`** holds one row for each distinct street or place name within a ward. Names that differ
+  only in case or accents count as one place.
 - **`countries`** is a full ISO 3166 country list. Every location row points to Tanzania.
 
 ## The source data
