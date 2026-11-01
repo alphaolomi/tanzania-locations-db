@@ -8,14 +8,14 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     ports:
-      - "${MYSQL_HOST_PORT}:3306"
+      - "127.0.0.1:${MYSQL_HOST_PORT:-3307}:3306"
     volumes:
       - mysqldata:/var/lib/mysql
     command: ["--local-infile=1"]
     restart: unless-stopped
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
+    image: phpmyadmin:5.2.3
     container_name: tanzania_locations_phpmyadmin
     environment:
       PMA_HOST: db
@@ -24,7 +24,7 @@ services:
       PMA_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     ports:
-      - "8080:80"
+      - "127.0.0.1:${PMA_HOST_PORT:-8081}:80"
     depends_on:
       - db
     restart: unless-stopped
