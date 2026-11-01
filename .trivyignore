@@ -1,0 +1,8 @@
+# Ignored findings. Each entry needs a reason and an expiry date (exp:), after which
+# Trivy reports it again. Remove an entry once the base image ships the fix.
+
+# gosu in the official mysql:8.4.13 image is built with Go 1.24.6. The entrypoint uses
+# gosu only to switch from root to the mysql user at start-up, and it makes no TLS
+# connections, so this crypto/tls flaw cannot be reached. Dependabot will propose the
+# fixed mysql image when one is published. Accepted 2026-11-02 by the repo owner.
+CVE-2025-68121 exp:2027-02-01

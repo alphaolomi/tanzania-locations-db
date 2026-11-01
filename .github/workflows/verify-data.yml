@@ -8,12 +8,45 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
+  validate-data:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate the CSVs (fails on problems not in the baseline)
+        run: python3 scripts/validate_csv.py
+
+  lint:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: shellcheck
+        run: docker run --rm -v "$PWD:/mnt" -w /mnt koalaman/shellcheck@sha256:61862eba1fcf09a484ebcc6feea46f1782532571a34ed51fedf90dd25f925a8d setup.sh # v0.11.0
+      - name: hadolint
+        run: docker run --rm -i hadolint/hadolint@sha256:32dac94127fd60b7b7e3fbfc65e1383b9b5e25c9bfd7b8536de7a539fe68a12d < Dockerfile # v2.15.1
+      - name: actionlint
+        run: docker run --rm -v "$PWD:/repo" -w /repo rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667 -color # 1.7.12
+      - name: zizmor (workflow security)
+        run: pipx run zizmor==1.31.1 --offline .github/workflows
+
   import:
+    needs: validate-data
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Build and start the database
         run: |
@@ -22,7 +55,7 @@ jobs:
 
       - name: Wait for the import to finish
         run: |
-          for i in $(seq 1 180); do
+          for _ in $(seq 1 180); do
             if docker compose logs db 2>&1 | grep -q "MySQL init process done"; then
               until docker compose exec -T db mysqladmin ping -uroot -pchange-me-root --silent; do sleep 2; done
               exit 0
@@ -46,3 +79,16 @@ jobs:
           check general 68571
           check places 75019
           exit $fail
+
+  scan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Build the image
+        run: docker build -t tanzania-geography:ci .
+      - name: Trivy scan (fails on fixable CRITICAL vulnerabilities)
+        run: |
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock             -v "$PWD/.trivyignore:/work/.trivyignore:ro"             aquasec/trivy@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c             image --severity CRITICAL --ignore-unfixed --exit-code 1 --no-progress             --ignorefile /work/.trivyignore tanzania-geography:ci # 0.76.1

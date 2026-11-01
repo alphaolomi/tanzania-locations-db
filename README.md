@@ -76,9 +76,54 @@ ARUSHA,23,ARUSHA CBD,231,SEKEI,23101,SANAWARI,
 
 Most of the source files label the code column `POSTCODE`.
 
-**Found a wrong or missing location?** Edit the region's CSV and open a pull request. CI re-imports the
-data and checks the counts. If the totals change on purpose, update them in the table above and in
-`.github/workflows/verify-data.yml`.
+**Found a wrong or missing location?** Edit the region's CSV and open a pull request. CI then validates
+the CSVs, re-imports the data and checks the counts. If the totals change on purpose, update them in the
+table above and in `.github/workflows/verify-data.yml`.
+
+### Data checks and known issues
+
+`scripts/validate_csv.py` checks the CSVs before every import. It checks:
+- UTF-8 encoding and LF line endings;
+- 8 columns per row;
+- numeric codes;
+- each ward code starts with its district code, and each district code with its region code. 2-digit
+  district codes are exempt, because Dar es Salaam's districts are their own zones;
+- each code always has the same name;
+- one region per file;
+- no stray spaces and no duplicate rows.
+
+Some issues already exist in the source data. They are listed in
+[`scripts/known-data-issues.txt`](scripts/known-data-issues.txt):
+
+| Issue | Count |
+|---|---|
+| Duplicate rows | 116 |
+| Ward code not under its district's code | 32 |
+| Code with more than one name | 25 |
+
+CI fails only on problems that are **not** in that list. After you fix some of them, regenerate the list:
+
+```bash
+python3 scripts/validate_csv.py --write-baseline
+```
+
+## Downloads
+
+Each [release](../../releases) has the data attached, so you can use it without Docker:
+- `tanzania-geography.sql.gz`: a full MySQL dump;
+- `regions`, `districts`, `wards`, `places` and `countries`, each as `.csv` and `.json`;
+- `SHA256SUMS`, to check the files.
+
+## CI
+
+| Job | What it checks |
+|---|---|
+| `validate-data` | The CSV checks above |
+| `import` | Builds the image, imports everything and checks the row counts |
+| `lint` | shellcheck, hadolint, actionlint and zizmor (workflow security) |
+| `scan` | Trivy scan of the image for fixable critical vulnerabilities |
+
+Tools and images are pinned by version or digest. Dependabot proposes updates weekly.
 
 ## Project layout
 
@@ -89,6 +134,9 @@ data and checks the counts. If the totals change on purpose, update them in the 
 | `sql-scripts/countries.sql` | Country list |
 | `sql-scripts/extract.sql` | Builds regions, districts, wards and places from `general` |
 | `setup.sh` | Import script run inside the container |
+| `scripts/validate_csv.py` | CSV checks (see above) |
+| `scripts/known-data-issues.txt` | Issues already in the data |
+| `scripts/export.py` | Builds the CSV and JSON release files |
 | `Dockerfile`, `docker-compose.yml` | MySQL 8.4 image and local stack |
 | `.env.example` | Settings to copy to `.env` |
 
@@ -99,6 +147,7 @@ and the work of its contributors. Changes in this fork:
 - the import moved to MySQL 8.4;
 - places are de-duplicated per ward;
 - Docker defaults were hardened (localhost-only ports, pinned images, `.env.example`);
-- data import is checked in CI.
+- the data is validated and the import is checked in CI;
+- data files are attached to each release.
 
 Licensed under the [GNU GPL v3.0](LICENSE), the same as the upstream project.

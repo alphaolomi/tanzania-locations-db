@@ -1,0 +1,51 @@
+name: release-assets
+
+# Attaches the data to each published GitHub release: a full SQL dump, plus CSV and
+# JSON files per level, so the data can be used without Docker.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  assets:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: write # upload release assets
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Build and import
+        run: |
+          cp .env.example .env
+          docker compose up -d --build db
+          for _ in $(seq 1 180); do
+            if docker compose logs db 2>&1 | grep -q "MySQL init process done"; then
+              until docker compose exec -T db mysqladmin ping -uroot -pchange-me-root --silent; do sleep 2; done
+              break
+            fi
+            sleep 5
+          done
+
+      - name: Export
+        run: |
+          mkdir -p tsv dist
+          docker compose exec -T db mysqldump -uroot -pchange-me-root --no-tablespaces locations 2>/dev/null \
+            | gzip -9 > dist/tanzania-geography.sql.gz
+          for t in regions districts wards places countries; do
+            docker compose exec -T db mysql -uroot -pchange-me-root locations -B -e "SELECT * FROM $t;" 2>/dev/null > "tsv/$t.tsv"
+          done
+          python3 scripts/export.py tsv dist
+          (cd dist && sha256sum ./* > SHA256SUMS)
+          ls -l dist
+
+      - name: Upload to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$TAG" dist/* --clobber -R "$GITHUB_REPOSITORY"
