@@ -18,13 +18,33 @@ What you need before running the code.
 
 - Run the setup file with `./setup.sh`.
 
-- Close PL/PgSQL prompts with `:q` whenever prompted, this will happen in the last phrase of data extraction, which you
-    will need to close the prompt for it to continue eg. "save_regions" etc..
-
 3. This will create a database called `locations` (user `locations`) and load all data.
 
 4. You can check the data with `mysql -u locations -p locations` and run `SELECT * FROM regions;` to verify
    the data is present.
+
+The setup script drops and recreates the project tables before importing the data, so do not run it against tables you
+want to keep.
+
+### Verify the import
+
+Check the row counts with the MySQL client:
+
+```bash
+mysql -u locations -p locations -e "SELECT 'regions', COUNT(*) FROM regions
+  UNION ALL SELECT 'districts', COUNT(*) FROM districts
+  UNION ALL SELECT 'wards', COUNT(*) FROM wards
+  UNION ALL SELECT 'general', COUNT(*) FROM general
+  UNION ALL SELECT 'places', COUNT(*) FROM places;"
+```
+
+Expected counts after a successful import:
+
+- `regions`: 26
+- `districts`: 158
+- `wards`: 3945
+- `general`: 68571
+- `places`: 75020
 
 ## For Docker
 
