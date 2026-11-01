@@ -11,7 +11,7 @@ accurate list of Tanzanian locations.
 | Regions | 26 |
 | Districts | 158 |
 | Wards | 3,945 |
-| Places (streets and named places, unique per ward) | 75,013 |
+| Places (streets and named places, unique per ward) | 75,019 |
 | Source rows (`general`) | 68,571 |
 
 ## Quick start (Docker)

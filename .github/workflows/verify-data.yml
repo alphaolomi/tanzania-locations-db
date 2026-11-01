@@ -44,5 +44,5 @@ jobs:
           check districts 158
           check wards 3945
           check general 68571
-          check places 75013
+          check places 75019
           exit $fail
