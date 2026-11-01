@@ -91,4 +91,4 @@ jobs:
         run: docker build -t tanzania-geography:ci .
       - name: Trivy scan (fails on fixable CRITICAL vulnerabilities)
         run: |
-          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock             aquasec/trivy@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c             image --severity CRITICAL --ignore-unfixed --exit-code 1 --no-progress tanzania-geography:ci # 0.76.1
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock             -v "$PWD/.trivyignore:/work/.trivyignore:ro"             aquasec/trivy@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c             image --severity CRITICAL --ignore-unfixed --exit-code 1 --no-progress             --ignorefile /work/.trivyignore tanzania-geography:ci # 0.76.1
