@@ -31,10 +31,10 @@ echo "Creating database if not exists..."
 mysql --protocol=socket -S "$MYSQL_SOCKET" -u"$DB_USER" -p"$DB_PASSWORD" -e "CREATE DATABASE IF NOT EXISTS \`$DB_NAME\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>/dev/null
 
 echo "Creating tables..."
-mysql_run_file /docker-entrypoint-initdb.d/01_tables.sql
+mysql_run_file /sql/01_tables.sql
 
 echo "Inserting countries..."
-mysql_run_file /docker-entrypoint-initdb.d/02_countries.sql
+mysql_run_file /sql/02_countries.sql
 
 echo "📄 Importing CSVs from: $DATA_DIR"
 
@@ -59,6 +59,6 @@ echo "🛠 Updating country_id..."
 mysql_exec "UPDATE general SET country_id = 210;"
 
 echo "🧠 Running extract.sql..."
-mysql_run_file /docker-entrypoint-initdb.d/04_extract.sql
+mysql_run_file /sql/04_extract.sql
 
 echo "✅ Tanzania Locations DB setup complete (MySQL)!"

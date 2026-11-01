@@ -1,0 +1,7 @@
+# Keep data and scripts with LF endings on every OS. A CRLF checkout on Windows
+# breaks setup.sh and adds a stray "\r" to the last CSV column on import.
+*.csv text eol=lf
+*.sh  text eol=lf
+*.sql text eol=lf
+Dockerfile text eol=lf
+*.yml text eol=lf

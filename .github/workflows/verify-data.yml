@@ -1,0 +1,48 @@
+name: verify-data
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  import:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Build and start the database
+        run: |
+          cp .env.example .env
+          docker compose up -d --build db
+
+      - name: Wait for the import to finish
+        run: |
+          for i in $(seq 1 180); do
+            if docker compose logs db 2>&1 | grep -q "MySQL init process done"; then
+              until docker compose exec -T db mysqladmin ping -uroot -pchange-me-root --silent; do sleep 2; done
+              exit 0
+            fi
+            sleep 5
+          done
+          docker compose logs db | tail -50
+          exit 1
+
+      - name: Check row counts
+        run: |
+          q() { docker compose exec -T db mysql -uroot -pchange-me-root locations -N -e "$1" 2>/dev/null; }
+          fail=0
+          check() {
+            got=$(q "SELECT COUNT(*) FROM $1;")
+            if [ "$got" = "$2" ]; then echo "ok   $1 = $got"; else echo "FAIL $1 = $got, expected $2"; fail=1; fi
+          }
+          check regions 26
+          check districts 158
+          check wards 3945
+          check general 68571
+          check places 75019
+          exit $fail
