@@ -184,8 +184,16 @@ def vol1a_regions(path: str):
     return out
 
 
+# Typos printed in the report. The row is read as printed, then the name is corrected here.
+NAME_FIXES = {"Nsimbo District l": "Nsimbo District"}
+
+
 def write(out_dir, regions, councils, wards):
     os.makedirs(out_dir, exist_ok=True)
+    for c in councils:
+        c["name"] = NAME_FIXES.get(c["name"], c["name"])
+    for x in wards:
+        x["council"] = NAME_FIXES.get(x["council"], x["council"])
 
     def w(name, header, rows):
         with open(os.path.join(out_dir, name), "w", encoding="utf-8", newline="") as fh:
