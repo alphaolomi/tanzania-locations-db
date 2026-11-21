@@ -35,10 +35,11 @@ jobs:
       - name: Export
         run: |
           mkdir -p tsv dist
-          docker compose exec -T db mysqldump -uroot -pchange-me-root --no-tablespaces locations 2>/dev/null \
-            | gzip -9 > dist/tanzania-geography.sql.gz
-          for t in regions districts wards places countries; do
-            docker compose exec -T db mysql -uroot -pchange-me-root locations -B -e "SELECT * FROM $t;" 2>/dev/null > "tsv/$t.tsv"
+          docker compose exec -T db mysqldump --default-character-set=utf8mb4 -uroot -pchange-me-root --no-tablespaces locations 2>/dev/null \
+            | gzip -9 > dist/tanzania-locations.sql.gz
+          for t in countries general regions districts wards places sources nbs_regions nbs_councils nbs_wards \
+                   crosswalk_regions crosswalk_districts crosswalk_wards; do
+            docker compose exec -T db mysql -uroot -pchange-me-root --default-character-set=utf8mb4 locations -B -e "SELECT * FROM $t;" 2>/dev/null > "tsv/$t.tsv"
           done
           python3 scripts/export.py tsv dist
           (cd dist && sha256sum ./* > SHA256SUMS)

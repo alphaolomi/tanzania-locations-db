@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Turn tab-separated table dumps (from `mysql -B`) into CSV and JSON release files.
+It runs on every table the release exports: the TCRA tables, `general`, `sources`, `nbs_*` and `crosswalk_*`.
 
 Usage: export.py <tsv-dir> <out-dir>. Each <table>.tsv becomes <table>.csv and <table>.json.
 """
