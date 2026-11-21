@@ -1,0 +1,32 @@
+region,zone,population,households,councils,source
+Dodoma,mainland,3085625,757821,8,NBS 2022
+Arusha,mainland,2356255,615182,7,NBS 2022
+Kilimanjaro,mainland,1861934,497850,7,NBS 2022
+Tanga,mainland,2615597,635514,11,NBS 2022
+Morogoro,mainland,3197104,829888,9,NBS 2022
+Pwani,mainland,2024947,542919,9,NBS 2022
+Dar es Salaam,mainland,5383728,1550066,5,NBS 2022
+Lindi,mainland,1194028,347235,6,NBS 2022
+Mtwara,mainland,1634947,493094,9,NBS 2022
+Ruvuma,mainland,1848794,466823,8,NBS 2022
+Iringa,mainland,1192728,321889,5,NBS 2022
+Mbeya,mainland,2343754,630102,7,NBS 2022
+Singida,mainland,2008058,395855,7,NBS 2022
+Tabora,mainland,3391679,598659,8,NBS 2022
+Rukwa,mainland,1540519,330023,4,NBS 2022
+Kigoma,mainland,2470967,479109,8,NBS 2022
+Shinyanga,mainland,2241299,423373,6,NBS 2022
+Kagera,mainland,2989299,702412,8,NBS 2022
+Mwanza,mainland,3699872,751631,8,NBS 2022
+Mara,mainland,2372015,470883,9,NBS 2022
+Manyara,mainland,1892502,403468,7,NBS 2022
+Njombe,mainland,889946,246503,6,NBS 2022
+Katavi,mainland,1152958,215981,5,NBS 2022
+Simiyu,mainland,2140497,317963,6,NBS 2022
+Geita,mainland,2977608,561942,6,NBS 2022
+Songwe,mainland,1344687,330739,5,NBS 2022
+Kaskazini Unguja,zanzibar,257290,54810,2,NBS 2022
+Kusini Unguja,zanzibar,195873,47010,2,NBS 2022
+Mjini Magharibi,zanzibar,893169,182079,3,NBS 2022
+Kaskazini Pemba,zanzibar,272091,48575,2,NBS 2022
+Kusini Pemba,zanzibar,271350,47786,2,NBS 2022

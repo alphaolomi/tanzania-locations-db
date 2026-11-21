@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Download the pinned source files into a cache directory and verify their SHA256.
 
-Usage: fetch_sources.py [--cache DIR]      (default cache: .cache/sources, git-ignored)
+Usage: fetch_sources.py [--cache DIR] [--zanzibar-out FILE]
+  --cache          default .cache/sources (git-ignored)
+  --zanzibar-out   default sources/zanzibar-postcodes/zanzibar.csv (committed, text only)
 
 Sources:
 - NBS 2022 Administrative Units Population Distribution Reports, vol 1a/1b/1c (PDF).
 - tanzaniapostcode.com postcodes, as published by DataHub (CSV). Only the five Zanzibar
-  regions are kept (written to <cache>/zanzibar-postcodes.csv); the full file is hashed too.
+  regions are kept; the full file is hashed too.
 
 Nothing downloaded is committed. If a hash differs the script fails and prints the new hash:
 check what changed upstream before updating the pin below.
@@ -62,12 +64,15 @@ def main() -> int:
         return 1
     with open(os.path.join(cache, "tz.csv"), encoding="utf-8", newline="") as fh:
         rows = [r for r in csv.DictReader(fh) if r["admin_name1"] in ZANZIBAR_REGIONS]
-    out = os.path.join(cache, "zanzibar-postcodes.csv")
+    here = os.path.dirname(os.path.abspath(__file__))
+    out = args[args.index("--zanzibar-out") + 1] if "--zanzibar-out" in args else os.path.join(
+        here, "..", "sources", "zanzibar-postcodes", "zanzibar.csv")
+    os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     with open(out, "w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh, lineterminator="\n")
-        w.writerow(["postal_code", "place_name", "admin_name1", "admin_name2", "admin_name3"])
+        w.writerow(["postcode", "shehia", "region", "district", "source"])
         for r in rows:
-            w.writerow([r["postal_code"], r["place_name"], r["admin_name1"], r["admin_name2"], r["admin_name3"]])
+            w.writerow([r["postal_code"], r["place_name"], r["admin_name1"], r["admin_name2"], "tanzaniapostcode.com"])
     print(f"wrote {out}: {len(rows)} Zanzibar rows")
     return 0
 

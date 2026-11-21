@@ -1,0 +1,196 @@
+region,seq,council,council_type,population,households,wards,source
+Dodoma,1,Kondoa District,District,244854,52677,21,NBS 2022
+Dodoma,2,Kondoa Town,Town,80443,20396,8,NBS 2022
+Dodoma,3,Mpwapwa District,District,403247,99003,33,NBS 2022
+Dodoma,4,Kongwa District,District,443867,101761,22,NBS 2022
+Dodoma,5,Chamwino District,District,486176,118812,36,NBS 2022
+Dodoma,6,Dodoma City,City,765179,214330,41,NBS 2022
+Dodoma,7,Bahi District,District,322526,75792,22,NBS 2022
+Dodoma,8,Chemba District,District,339333,75050,26,NBS 2022
+Arusha,1,Monduli District,District,227585,55053,20,NBS 2022
+Arusha,2,Meru District,District,331603,91511,26,NBS 2022
+Arusha,3,Arusha District,District,449518,120997,27,NBS 2022
+Arusha,4,Longido District,District,175915,42477,18,NBS 2022
+Arusha,5,Karatu District,District,280454,63685,14,NBS 2022
+Arusha,6,Ngorongoro District,District,273549,60883,28,NBS 2022
+Arusha,7,Arusha City,City,617631,180576,25,NBS 2022
+Kilimanjaro,1,Rombo District,District,275314,71554,28,NBS 2022
+Kilimanjaro,2,Mwanga District,District,148763,38847,20,NBS 2022
+Kilimanjaro,3,Same District,District,300303,76272,34,NBS 2022
+Kilimanjaro,4,Moshi Municipal,Municipal,221733,65213,21,NBS 2022
+Kilimanjaro,5,Moshi District,District,535803,145669,32,NBS 2022
+Kilimanjaro,6,Hai District,District,240999,64754,17,NBS 2022
+Kilimanjaro,7,Siha District,District,139019,35541,17,NBS 2022
+Tanga,1,Lushoto District,District,350958,85149,33,NBS 2022
+Tanga,2,Bumbuli District,District,159373,38620,18,NBS 2022
+Tanga,3,Korogwe District,District,272870,68277,29,NBS 2022
+Tanga,4,Korogwe Town,Town,86551,22975,11,NBS 2022
+Tanga,5,Muheza District,District,238260,65430,37,NBS 2022
+Tanga,6,Tanga City,City,393429,98870,27,NBS 2022
+Tanga,7,Pangani District,District,75642,20254,14,NBS 2022
+Tanga,8,Handeni District,District,384353,88493,21,NBS 2022
+Tanga,9,Handeni Town,Town,108968,25465,12,NBS 2022
+Tanga,10,Kilindi District,District,398391,87439,21,NBS 2022
+Tanga,11,Mkinga District,District,146802,34542,22,NBS 2022
+Morogoro,1,Kilosa District,District,617032,165789,40,NBS 2022
+Morogoro,2,Morogoro District,District,387736,102120,31,NBS 2022
+Morogoro,3,Morogoro Municipal,Municipal,471409,133809,29,NBS 2022
+Morogoro,4,Mlimba District,District,292536,76290,16,NBS 2022
+Morogoro,5,Ifakara Town,Town,290424,82330,19,NBS 2022
+Morogoro,6,Ulanga District,District,232895,55026,21,NBS 2022
+Morogoro,7,Malinyi District,District,225126,49766,10,NBS 2022
+Morogoro,8,Mvomero District,District,421741,110940,30,NBS 2022
+Morogoro,9,Gairo District,District,258205,53818,18,NBS 2022
+Pwani,1,Bagamoyo District,District,205478,58360,11,NBS 2022
+Pwani,2,Chalinze District,District,316759,84216,15,NBS 2022
+Pwani,3,Kibaha District,District,123367,35030,14,NBS 2022
+Pwani,4,Kibaha Town,Town,265360,73367,14,NBS 2022
+Pwani,5,Kisarawe District,District,159226,44180,17,NBS 2022
+Pwani,6,Mkuranga District,District,533033,142725,25,NBS 2022
+Pwani,7,Rufiji District,District,159906,37977,13,NBS 2022
+Pwani,8,Mafia District,District,66180,18360,8,NBS 2022
+Pwani,9,Kibiti District,District,195638,48704,16,NBS 2022
+Dar es Salaam,1,Kinondoni Municipal,Municipal,982328,299184,20,NBS 2022
+Dar es Salaam,2,Dar es Salaam City,City,1649912,458614,36,NBS 2022
+Dar es Salaam,3,Temeke Municipal,Municipal,1346674,384046,23,NBS 2022
+Dar es Salaam,4,Kigamboni Municipal,Municipal,317902,91135,9,NBS 2022
+Dar es Salaam,5,Ubungo Municipal,Municipal,1086912,317087,14,NBS 2022
+Lindi,1,Kilwa District,District,297676,72152,23,NBS 2022
+Lindi,2,Mtama District,District,166493,50708,20,NBS 2022
+Lindi,3,Lindi Municipal,Municipal,174126,52809,31,NBS 2022
+Lindi,4,Nachingwea District,District,233655,74738,36,NBS 2022
+Lindi,5,Liwale District,District,136505,35897,20,NBS 2022
+Lindi,6,Ruangwa District,District,185573,60931,22,NBS 2022
+Mtwara,1,Mtwara District,District,158504,44768,21,NBS 2022
+Mtwara,2,Nanyamba Town,Town,132624,38015,17,NBS 2022
+Mtwara,3,Mtwara Municipal,Municipal,146772,44735,18,NBS 2022
+Mtwara,4,Newala District,District,136939,42001,22,NBS 2022
+Mtwara,5,Newala Town,Town,104349,31821,16,NBS 2022
+Mtwara,6,Masasi District,District,314778,97946,34,NBS 2022
+Mtwara,7,Masasi Town,Town,137585,43159,14,NBS 2022
+Mtwara,8,Tandahimba District,District,299073,89912,32,NBS 2022
+Mtwara,9,Nanyumbu District,District,204323,60737,17,NBS 2022
+Ruvuma,1,Tunduru District,District,412054,110208,39,NBS 2022
+Ruvuma,2,Songea District,District,178201,45198,16,NBS 2022
+Ruvuma,3,Songea Municipal,Municipal,286285,76927,21,NBS 2022
+Ruvuma,4,Madaba District,District,65215,16725,8,NBS 2022
+Ruvuma,5,Mbinga District,District,285582,69775,29,NBS 2022
+Ruvuma,6,Mbinga Town,Town,158896,39979,19,NBS 2022
+Ruvuma,7,Nyasa District,District,191193,44737,20,NBS 2022
+Ruvuma,8,Namtumbo District,District,271368,63274,21,NBS 2022
+Iringa,1,Iringa District,District,315354,81106,28,NBS 2022
+Iringa,2,Iringa Municipal,Municipal,202490,58008,18,NBS 2022
+Iringa,3,Mafinga Town,Town,122329,35981,9,NBS 2022
+Iringa,4,Mufindi District,District,288996,77197,27,NBS 2022
+Iringa,5,Kilolo District,District,263559,69597,24,NBS 2022
+Mbeya,1,Chunya District,District,344471,85999,20,NBS 2022
+Mbeya,2,Mbeya District,District,371259,100884,28,NBS 2022
+Mbeya,3,Mbeya City,City,541603,154431,36,NBS 2022
+Mbeya,4,Kyela District,District,266426,71968,33,NBS 2022
+Mbeya,5,Rungwe District,District,273536,76242,29,NBS 2022
+Mbeya,6,Busokelo District,District,100123,28439,13,NBS 2022
+Mbeya,7,Mbarali District,District,446336,112139,20,NBS 2022
+Singida,1,Iramba District,District,328912,64645,20,NBS 2022
+Singida,2,Singida District,District,284895,53458,21,NBS 2022
+Singida,3,Singida Municipal,Municipal,232459,54697,18,NBS 2022
+Singida,4,Manyoni District,District,279069,61059,19,NBS 2022
+Singida,5,Itigi District,District,215947,38966,13,NBS 2022
+Singida,6,Ikungi District,District,411262,74527,28,NBS 2022
+Singida,7,Mkalama District,District,255514,48503,17,NBS 2022
+Tabora,1,Nzega Town,Town,125193,28813,10,NBS 2022
+Tabora,2,Nzega District,District,574498,97329,36,NBS 2022
+Tabora,3,Igunga District,District,546204,88291,35,NBS 2022
+Tabora,4,Uyui District,District,562588,90948,30,NBS 2022
+Tabora,5,Urambo District,District,260322,47039,18,NBS 2022
+Tabora,6,Sikonge District,District,335686,56515,20,NBS 2022
+Tabora,7,Tabora Municipal,Municipal,308741,73500,29,NBS 2022
+Tabora,8,Kaliua District,District,678447,116224,28,NBS 2022
+Rukwa,1,Kalambo District,District,316783,69225,23,NBS 2022
+Rukwa,2,Sumbawanga District,District,494330,105551,27,NBS 2022
+Rukwa,3,Sumbawanga Municipal,Municipal,303986,70344,19,NBS 2022
+Rukwa,4,Nkasi District,District,425420,84903,28,NBS 2022
+Kigoma,1,Kibondo District,District,362922,63929,19,NBS 2022
+Kigoma,2,Kasulu District,District,537767,102332,21,NBS 2022
+Kigoma,3,Kasulu Town,Town,238321,47663,15,NBS 2022
+Kigoma,4,Kigoma District,District,222792,41728,16,NBS 2022
+Kigoma,5,Kigoma Municipal,Municipal,232388,49656,19,NBS 2022
+Kigoma,6,Uvinza District,District,458353,91323,16,NBS 2022
+Kigoma,7,Buhigwe District,District,240005,45117,20,NBS 2022
+Kigoma,8,Kakonko District,District,178419,37361,13,NBS 2022
+Shinyanga,1,Ushetu District,District,390593,65940,20,NBS 2022
+Shinyanga,2,Kahama Municipal,Municipal,453654,104686,20,NBS 2022
+Shinyanga,3,Msalala District,District,378214,66367,18,NBS 2022
+Shinyanga,4,Kishapu District,District,335483,54960,29,NBS 2022
+Shinyanga,5,Shinyanga District,District,468611,79706,26,NBS 2022
+Shinyanga,6,Shinyanga Municipal,Municipal,214744,51714,17,NBS 2022
+Kagera,1,Karagwe District,District,385744,93366,23,NBS 2022
+Kagera,2,Bukoba District,District,322448,81859,29,NBS 2022
+Kagera,3,Bukoba Municipal,Municipal,144938,41128,14,NBS 2022
+Kagera,4,Muleba District,District,637659,149416,43,NBS 2022
+Kagera,5,Biharamulo District,District,457114,87733,17,NBS 2022
+Kagera,6,Ngara District,District,383092,88575,22,NBS 2022
+Kagera,7,Kyerwa District,District,412910,95983,24,NBS 2022
+Kagera,8,Missenyi District,District,245394,64352,20,NBS 2022
+Mwanza,1,Ukerewe District,District,387815,76285,25,NBS 2022
+Mwanza,2,Magu District,District,421119,80681,25,NBS 2022
+Mwanza,3,Mwanza City,City,594834,153226,18,NBS 2022
+Mwanza,4,Kwimba District,District,480025,75394,30,NBS 2022
+Mwanza,5,Sengerema District,District,425415,77509,26,NBS 2022
+Mwanza,6,Buchosa District,District,413110,81692,21,NBS 2022
+Mwanza,7,Ilemela Municipal,Municipal,509687,127507,19,NBS 2022
+Mwanza,8,Misungwi District,District,467867,79337,27,NBS 2022
+Mara,1,Tarime District,District,404848,80457,26,NBS 2022
+Mara,2,Tarime Town,Town,133043,29153,8,NBS 2022
+Mara,3,Serengeti District,District,340349,62000,30,NBS 2022
+Mara,4,Musoma District,District,266665,49270,21,NBS 2022
+Mara,5,Musoma Municipal,Municipal,164172,38278,16,NBS 2022
+Mara,6,Bunda District,District,243822,44756,19,NBS 2022
+Mara,7,Bunda Town,Town,182970,37546,14,NBS 2022
+Mara,8,Butiama District,District,281656,55734,18,NBS 2022
+Mara,9,Rorya District,District,354490,73689,26,NBS 2022
+Manyara,1,Babati District,District,375200,80578,25,NBS 2022
+Manyara,2,Babati Town,Town,129572,33593,8,NBS 2022
+Manyara,3,Hanang District,District,367391,69710,33,NBS 2022
+Manyara,4,Mbulu District,District,238272,43406,18,NBS 2022
+Manyara,5,Mbulu Town,Town,138593,27670,17,NBS 2022
+Manyara,6,Simanjiro District,District,291169,67023,18,NBS 2022
+Manyara,7,Kiteto District,District,352305,81488,23,NBS 2022
+Njombe,1,Njombe District,District,109311,28544,12,NBS 2022
+Njombe,2,Njombe Town,Town,182127,53282,13,NBS 2022
+Njombe,3,Makambako Town,Town,146481,40942,12,NBS 2022
+Njombe,4,Ludewa District,District,151361,39850,26,NBS 2022
+Njombe,5,Makete District,District,109160,31618,23,NBS 2022
+Njombe,6,Wanging'ombe District,District,191506,52267,21,NBS 2022
+Katavi,1,Mpanda Municipal,Municipal,245764,56589,15,NBS 2022
+Katavi,2,Nsimbo District l,l,201102,37104,12,NBS 2022
+Katavi,3,Tanganyika District,District,371836,68279,16,NBS 2022
+Katavi,4,Mlele District,District,118818,20885,6,NBS 2022
+Katavi,5,Mpimbwe District,District,215438,33124,9,NBS 2022
+Simiyu,1,Bariadi District,District,383385,53348,21,NBS 2022
+Simiyu,2,Bariadi Town,Town,260927,42352,10,NBS 2022
+Simiyu,3,Itilima District,District,419213,56718,22,NBS 2022
+Simiyu,4,Meatu District,District,366941,48967,29,NBS 2022
+Simiyu,5,Maswa District,District,427864,65756,36,NBS 2022
+Simiyu,6,Busega District,District,282167,50822,15,NBS 2022
+Geita,1,Geita District,District,1035214,198797,37,NBS 2022
+Geita,2,Geita Town,Town,361671,78531,13,NBS 2022
+Geita,3,Nyang'hwale District,District,225803,36159,15,NBS 2022
+Geita,4,Mbogwe District,District,362855,63635,17,NBS 2022
+Geita,5,Bukombe District,District,407102,74664,17,NBS 2022
+Geita,6,Chato District,District,584963,110156,23,NBS 2022
+Songwe,1,Momba District,District,259781,58098,14,NBS 2022
+Songwe,2,Tunduma Town,Town,219309,56589,15,NBS 2022
+Songwe,3,Songwe District,District,229129,47782,18,NBS 2022
+Songwe,4,Mbozi District,District,510599,133456,29,NBS 2022
+Songwe,5,Ileje District,District,125869,34814,18,NBS 2022
+Kaskazini Unguja,1,Kaskazini A Town,Town,157369,33257,44,NBS 2022
+Kaskazini Unguja,2,Kaskazini B Town,Town,99921,21553,31,NBS 2022
+Kusini Unguja,1,Kati Town,Town,132717,30570,42,NBS 2022
+Kusini Unguja,2,Kusini District,District,63156,16440,21,NBS 2022
+Mjini Magharibi,1,Mjini Municipal,Municipal,219007,46236,56,NBS 2022
+Mjini Magharibi,2,Magharibi A Municipal,Municipal,329645,64828,31,NBS 2022
+Mjini Magharibi,3,Magharibi B Municipal,Municipal,344517,71015,34,NBS 2022
+Kaskazini Pemba,1,Wete Town,Town,148712,26627,36,NBS 2022
+Kaskazini Pemba,2,Micheweni District,District,123379,21948,25,NBS 2022
+Kusini Pemba,1,Chake Chake Town,Town,136298,24557,32,NBS 2022
+Kusini Pemba,2,Mkoani Town,Town,135052,23229,36,NBS 2022
