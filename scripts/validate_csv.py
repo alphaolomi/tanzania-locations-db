@@ -11,7 +11,7 @@ regenerate it after fixing data. Checks:
   code (2-digit district codes are exempt: Dar es Salaam's districts are their own zones);
 - every code always carries the same name;
 - each file holds a single region;
-- no leading or trailing spaces and no duplicate rows.
+- no leading or trailing spaces, no line breaks or repeated spaces inside a name, and no duplicate rows.
 """
 import csv
 import glob
@@ -70,6 +70,9 @@ for path in files:
         for label, value in zip(("region", "regioncode", "district", "districtcode", "ward", "wardcode", "street", "places"), row):
             if value != value.strip():
                 problem(where, f"{label} has leading or trailing spaces: {value!r}", f"{rowkey}|spaces {label}")
+        for label, value in zip(("region", "regioncode", "district", "districtcode", "ward", "wardcode", "street", "places"), row):
+            if "\n" in value or "\t" in value or (label in ("region", "district", "ward") and "  " in value):
+                problem(where, f"{label} has a line break, tab or repeated spaces: {value!r}", f"{rowkey}|whitespace {label}")
         if not (rcode.strip().isdigit() and dcode.strip().isdigit() and wcode.strip().isdigit()):
             problem(where, f"non-numeric code: {rcode!r}/{dcode!r}/{wcode!r}", f"{rowkey}|non-numeric")
             continue

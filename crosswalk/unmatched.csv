@@ -1,0 +1,214 @@
+side,region,district_or_council,tcra_ward_code,unit,closest_on_other_side,closest_score
+TCRA,ARUSHA,ARUSHA CBD,23107,UNGA LIMITED,Arusha City / Unga Ltd,80
+TCRA,ARUSHA,ARUSHA CBD,23115,SOKON 1,Arusha City / Sokon I,86
+TCRA,ARUSHA,ARUSHA,23203,OLKOKOLA,Arusha City / Sokon I,40
+TCRA,GEITA,GEITA,30120,NZERA(NZELA),Geita District / Nzera,62
+TCRA,KAGERA,BUKOBA CBD,35101,BUKOBA,Bukoba Municipal / Bakoba,83
+TCRA,KAGERA,KARAGWE,35443,NYAKAHANGA,Bukoba Municipal / Bakoba,38
+TCRA,KAGERA,KARAGWE,35444,NDAMA,Bukoba Municipal / Bakoba,36
+TCRA,KAGERA,KARAGWE,35445,IHANDA,Bukoba Municipal / Bakoba,33
+TCRA,KASKAZINI PEMBA,WETE,75112,MJINI OLE,Micheweni District / Shanake,38
+TCRA,KASKAZINI PEMBA,WETE,75112,OLE,Wete Town / Mtemani,20
+TCRA,KASKAZINI PEMBA,MICHEWENI,75206,NJUGUNI,Micheweni District / Wingwi Njuguni,67
+TCRA,KASKAZINI UNGUJA,KASKAZINI A,73106,KILIMANI,Kaskazini A Town / Kilimani Tazari,70
+TCRA,KASKAZINI UNGUJA,KASKAZINI A,73107,NUNGWI,Kaskazini A Town / Kiungani,57
+TCRA,KASKAZINI UNGUJA,KASKAZINI A,73108,KIJINI,Kaskazini A Town / Uvivini,62
+TCRA,KASKAZINI UNGUJA,KASKAZINI A,73108,MATEMWE,Kaskazini A Town / Matemwe Kaskazini,70
+TCRA,KASKAZINI UNGUJA,KASKAZINI B,73206,DONGE KIPANGE,Kaskazini A Town / Kipange,70
+TCRA,KASKAZINI UNGUJA,KASKAZINI B,73206,DONGE MCHANGANI,Kaskazini A Town / Mchangani,75
+TCRA,KASKAZINI UNGUJA,KASKAZINI B,73206,DONGE MUANDA,Kaskazini A Town / Muwanda,63
+TCRA,KATAVI,MPANDA -CBD,50123,URWILA,Nsimbo District / Uruwira (Urwira),50
+TCRA,KIGOMA,KIGOMA,47210,KAMARA,Kakonko District / Katanga,62
+TCRA,KIGOMA,KASULU,47301,KASULU MJINI,Uvinza District / Kazuramimba,52
+TCRA,KIGOMA,BUHIGWE,47507,MWANGA B,Buhigwe District / Mubanga,67
+TCRA,KILIMANJARO,MOSHI CBD,25116,LONGUO,Moshi Municipal / Longuo ‘B’,86
+TCRA,KILIMANJARO,MOSHI,25223,MAKUYUNI (HIMO),Moshi District / Makuyuni,76
+TCRA,KUSINI PEMBA,MKOANI,74113,MUAMBE,Mkoani Town / Mwambe,83
+TCRA,KUSINI UNGUJA,KATI,72204,MCHANGANI,Kati Town / Mchangani Shamba,72
+TCRA,LINDI,LINDI,65231,KINYOPE,Kilwa District / Kivinje,57
+TCRA,LINDI,KILWA,65401,KILWA MASOKO,Kilwa District / Masoko,67
+TCRA,LINDI,KILWA,65402,KIVINJE/SINGINO,Kilwa District / Kivinje,64
+TCRA,LINDI,KILWA,65409,PANDE / MIKOMA,Kilwa District / Pande,59
+TCRA,MANYARA,HANANG',27333,JORDON,Hanang District / Jorodom,77
+TCRA,MANYARA,MBULU,27401,AYOMOHE,Mbulu Town / Ayamohe,86
+TCRA,MANYARA,MBULU,27426,YAEDACHINI,Mbulu District / Endamilay,42
+TCRA,MANYARA,SIMANJIRO,27612,OLJORO NAMBA 5,Simanjiro District / Oljoro No.5,80
+TCRA,MARA,TARIME,31429,KATERE,Tarime Town / Ketare,67
+TCRA,MARA,SERENGETI,31631,MOGUTENI,Tarime Town / Ketare,29
+TCRA,MJINI MAGHARIBI,MJINI,71108,KWAALINATHOO,Mjini Municipal / Kwaalinatu,82
+TCRA,MJINI MAGHARIBI,MAGHARIBI,71205,FUONI KIJITOUPELE,Magharibi B Municipal / Kijitoupele,79
+TCRA,MJINI MAGHARIBI,MAGHARIBI,71213,FUONI KIBONDENI,Magharibi B Municipal / Kibondeni,75
+TCRA,MOROGORO,MOROGORO,67205,MKALAMBANI,Morogoro District / Mkambalani,80
+TCRA,MOROGORO,MVOMERO,67329,KICHANGANI,Morogoro District / Mkambalani,50
+TCRA,MTWARA,TANDAHIMBA,63318,MDIMBA MNYOMA,Masasi District / Namwanga,38
+TCRA,MTWARA,TANDAHIMBA,63319,MDIMBA MNYOMA,Masasi District / Namwanga,38
+TCRA,MTWARA,MASASI,63510,MKUNDI,Tandahimba District / Mkonjowano,38
+TCRA,MTWARA,NANYUMBU,63606,NAKOPI,Nanyumbu District / Napacho,46
+TCRA,MWANZA,SENGEREMA,33340,LUHUZA,Misungwi District / Buhunda,62
+TCRA,MWANZA,MISUNGWI,33527,ISESA,Buchosa District / Buhama,18
+TCRA,RUKWA,NKASI,55324,KIPINDU,Nkasi District / Kipundu,86
+TCRA,RUKWA,NKASI,55328,ISALE ASILIA,Nkasi District / Ntuchi,11
+TCRA,RUVUMA,SONGEA,57205,MAGAGULA,Songea District / Magagula (Magagura),64
+TCRA,SHINYANGA,KISHAPU,37523,BUPIPI,Kishapu District / Bupigi,83
+TCRA,SIMIYU,BARIADI,39132,BENEMHI,Bariadi District / Banemhi,86
+TCRA,SINGIDA,MANYONI,43401,MANYONI URBAN,Manyoni District / Manyoni,70
+TCRA,SONGWE,MBOZI,54206,ISANDULA,Mbozi District / Isalalo,67
+TCRA,SONGWE,MBOZI,54211,MYOVIZI,Songwe District / Udinde,15
+TCRA,SONGWE,MBOZI,54226,WASA,Mbozi District / Isalalo,36
+TCRA,TANGA,PANGANI,21301,PANGANI,Pangani District / Pangani Mashariki,74
+TCRA,TANGA,PANGANI,21302,PANGANI,Pangani District / Pangani Mashariki,74
+TCRA,TANGA,KOROGWE,21622,MAGAMBA,Korogwe District / Magamba Kwalukonge,56
+NBS 2022,Arusha,Arusha District,,Lengijave,LONGIDO / ENGIKARET (23507),67
+NBS 2022,Arusha,Arusha City,,Unga Ltd,ARUSHA CBD / UNGA LIMITED (23107),80
+NBS 2022,Arusha,Arusha City,,Sokon I,ARUSHA / SOKON II (23208),93
+NBS 2022,Kilimanjaro,Rombo District,,Motamburu Kitendeni,ROMBO / TARAKEA MOTAMBURU (25723),50
+NBS 2022,Kilimanjaro,Moshi Municipal,,Longuo ‘B’,MOSHI CBD / LONGUO (25116),86
+NBS 2022,Kilimanjaro,Moshi District,,Makuyuni,MOSHI / MAKUYUNI (HIMO) (25223),76
+NBS 2022,Tanga,Korogwe District,,Magamba Kwalukonge,KOROGWE / MAGAMBA (21622),56
+NBS 2022,Tanga,Pangani District,,Pangani Mashariki,PANGANI / PANGANI (21301),74
+NBS 2022,Tanga,Pangani District,,Pangani Magharibi,PANGANI / PANGANI (21301),74
+NBS 2022,Morogoro,Morogoro District,,Mkambalani,MOROGORO / MKALAMBANI (67205),80
+NBS 2022,Morogoro,Mvomero District,,Kweuma,ULANGA / EUGA (67613),60
+NBS 2022,Lindi,Kilwa District,,Kivinje,KILWA / KIVINJE/SINGINO (65402),64
+NBS 2022,Lindi,Kilwa District,,Masoko,KILWA / KILWA MASOKO (65401),67
+NBS 2022,Lindi,Kilwa District,,Pande,LINDI CBD / MAKONDE (65101),67
+NBS 2022,Mtwara,Masasi District,,Namwanga,MASASI / NAMALENGA (63516),82
+NBS 2022,Mtwara,Tandahimba District,,Chaume,MASASI / MCHAURU (63519),62
+NBS 2022,Mtwara,Tandahimba District,,Mkonjowano,NANYUMBU / MKONONA (63611),71
+NBS 2022,Mtwara,Nanyumbu District,,Napacho,NEWALA / NAKAHAKO (63423),67
+NBS 2022,Ruvuma,Songea District,,Magagula (Magagura),SONGEA / MAGAGULA (57205),64
+NBS 2022,Singida,Manyoni District,,Manyoni,IKUNGI / MANG'ONYI (43620),80
+NBS 2022,Rukwa,Nkasi District,,Kipundu,NKASI / KIPINDU (55324),86
+NBS 2022,Rukwa,Nkasi District,,Ntuchi,SUMBAWANGA CBD / CHANJI (55108),50
+NBS 2022,Kigoma,Kibondo District,,Bitare,KIGOMA / BITALE (47202),83
+NBS 2022,Kigoma,Kibondo District,,Kitahana,KASULU / KITANGA (47318),80
+NBS 2022,Kigoma,Kibondo District,,Biturana,KIGOMA CBD / BUHANDA (47106),67
+NBS 2022,Kigoma,Kibondo District,,Kumwambu,KIGOMA CBD / KASIMBU (47112),67
+NBS 2022,Kigoma,Kibondo District,,Rusohoko,KASULU / BUHORO (47312),57
+NBS 2022,Kigoma,Kibondo District,,Kagezi,KIGOMA CBD / KAGERA (47113),67
+NBS 2022,Kigoma,Kibondo District,,Mukabuye,KASULU / MUZYE (47304),62
+NBS 2022,Kigoma,Kibondo District,,Nyaruyoba,KASULU / NYUMBIGWA (47322),56
+NBS 2022,Kigoma,Kasulu District,,Makere,KIGOMA / MAHEMBE (47201),62
+NBS 2022,Kigoma,Kasulu District,,Kalela,UVINZA / KALYA (47605),73
+NBS 2022,Kigoma,Kasulu Town,,Nyansha,KASULU / NYACHENDA (47326),62
+NBS 2022,Kigoma,Kasulu Town,,Kumsenga,KIBONDO / KUMSENGA (47410),100
+NBS 2022,Kigoma,Kasulu Town,,Mwilamvya,BUHIGWE / MWAYAYA (47517),62
+NBS 2022,Kigoma,Kasulu Town,,Murusi,KASULU / MURUFITI (47306),71
+NBS 2022,Kigoma,Kasulu Town,,Murubona,KASULU / MUHUNGA (47319),67
+NBS 2022,Kigoma,Kasulu Town,,Kumnyika,KIBONDO / KUMSENGA (47410),62
+NBS 2022,Kigoma,Kasulu Town,,Kimobwa,KIGOMA CBD / KIGOMA (47101),62
+NBS 2022,Kigoma,Kasulu Town,,Heru Juu,KASULU / HERU USHINGO (47317),60
+NBS 2022,Kigoma,Kigoma District,,Mungonya,KASULU / MUHUNGA (47319),67
+NBS 2022,Kigoma,Kigoma District,,Ziwani,KIGOMA / MWANDIGA (47211),57
+NBS 2022,Kigoma,Kigoma District,,Nyarubanda,KASULU / NYACHENDA (47326),63
+NBS 2022,Kigoma,Kigoma District,,Nkungwe,KIBONDO / RUGONGWE (47405),67
+NBS 2022,Kigoma,Kigoma District,,Kidahwe,BUHIGWE / KIBANDE (47516),57
+NBS 2022,Kigoma,Uvinza District,,Igalula,UVINZA / ILAGALA (47609),71
+NBS 2022,Kigoma,Uvinza District,,Herembe,KIGOMA / MAHEMBE (47201),71
+NBS 2022,Kigoma,Uvinza District,,Mwakizega,KIGOMA / MWANDIGA (47211),71
+NBS 2022,Kigoma,Uvinza District,,Kazuramimba,KIGOMA CBD / KASIMBU (47112),56
+NBS 2022,Kigoma,Uvinza District,,Mtegowanoti,KIGOMA / MATENDO (47204),56
+NBS 2022,Kigoma,Uvinza District,,Itebula,KIBONDO / ITABA (47411),67
+NBS 2022,Kigoma,Uvinza District,,Basanza,KAKONKO / KASANDA (47702),71
+NBS 2022,Kigoma,Buhigwe District,,Bukuba,KIGOMA CBD / KATUBUKA (47115),57
+NBS 2022,Kigoma,Buhigwe District,,Mkatanga,KASULU / KITANGA (47318),80
+NBS 2022,Kigoma,Buhigwe District,,Kibwigwa,KASULU / KWAGA (47302),62
+NBS 2022,Kigoma,Buhigwe District,,Mubanga,KASULU / MUHUNGA (47319),71
+NBS 2022,Kigoma,Buhigwe District,,Kinazi,KIBONDO / KIZAZI (47409),83
+NBS 2022,Kigoma,Kakonko District,,Nyamtukuza,BUHIGWE / NYAMUGALI (47511),63
+NBS 2022,Kigoma,Kakonko District,,Gwarama,KIBONDO / MABAMBA (47408),57
+NBS 2022,Kigoma,Kakonko District,,Kanyonza,UVINZA / KALYA (47605),62
+NBS 2022,Kigoma,Kakonko District,,Katanga,KASULU / KITANGA (47318),86
+NBS 2022,Shinyanga,Kishapu District,,Bupigi,KISHAPU / BUPIPI (37523),83
+NBS 2022,Kagera,Bukoba Municipal,,Bakoba,BUKOBA CBD / BUKOBA (35101),83
+NBS 2022,Mwanza,Buchosa District,,Buhama,KWIMBA / BUPAMWA (33823),77
+NBS 2022,Mwanza,Misungwi District,,Buhunda,UKEREWE / BUKANDA (33606),71
+NBS 2022,Mara,Tarime Town,,Ketare,BUNDA / KETARE (31525),100
+NBS 2022,Mara,Bunda Town,,Nyatwali,TARIME / NYAMWAGA (31417),62
+NBS 2022,Manyara,Hanang District,,Jorodom,HANANG' / JORDON (27333),77
+NBS 2022,Manyara,Mbulu District,,Endamilay,HANANG' / ENDASIWOLD (27311),63
+NBS 2022,Manyara,Mbulu Town,,Ayamohe,MBULU / AYOMOHE (27401),86
+NBS 2022,Manyara,Simanjiro District,,Oljoro No.5,SIMANJIRO / OLJORO NAMBA 5 (27612),80
+NBS 2022,Katavi,Nsimbo District,,Uruwira (Urwira),MPANDA -CBD / URWILA (50123),50
+NBS 2022,Simiyu,Bariadi District,,Banemhi,BARIADI / BENEMHI (39132),86
+NBS 2022,Geita,Geita District,,Nzera,GEITA / LWENZERA (30134),77
+NBS 2022,Geita,Geita Town,,Bombambili,GEITA / BUKOLI (30121),50
+NBS 2022,Songwe,Songwe District,,Udinde,MBOZI / IHANDA (54205),50
+NBS 2022,Songwe,Mbozi District,,Isalalo,MBOZI / ISANDULA (54206),67
+NBS 2022,Songwe,Mbozi District,,Ukwile,SONGWE / NAMKUKWE (54110),57
+NBS 2022,Songwe,Mbozi District,,Mahenje,MOMBA / MPANDE (54418),62
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Banda Kuu,KASKAZINI A / BANDAMAJI (73110),56
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Kiungani,KASKAZINI A / KIGOMANI (73108),75
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Kilimani Tazari,KASKAZINI A / KILIMANI (73106),70
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Kijini Matemwe,KASKAZINI A / MATEMWE (73108),67
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Kigongoni,KASKAZINI A / KISONGONI (73110),89
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Juga Kuu,KASKAZINI A / CHAANI KUBWA (73109),40
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Mbuyutende,KASKAZINI A / MUWANGE (73105),47
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Matemwe Kaskazini,KASKAZINI A / MATEMWE (73108),70
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Matemwe Kusini,KASKAZINI A / MATEMWE (73108),70
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Mchangani,KASKAZINI A / PWANI MCHANGANI (73111),75
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Kipange,KASKAZINI A / KIVUNGE (73103),71
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Muwanda,KASKAZINI A / MUWANGE (73105),71
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Gomani,KASKAZINI A / KIGOMANI (73108),86
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Uvivini,KASKAZINI A / KIJINI (73108),62
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Mtakuja,KASKAZINI B / MAKOBA (73210),62
+NBS 2022,Kaskazini Unguja,Kaskazini A Town,,Jongowe,KASKAZINI A / KISONGONI (73110),50
+NBS 2022,Kaskazini Unguja,Kaskazini B Town,,Donge Pwani,KASKAZINI B / DONGE MCHANGANI (73206),62
+NBS 2022,Kaskazini Unguja,Kaskazini B Town,,Majenzi,KASKAZINI B / MBALENI (73207),71
+NBS 2022,Kaskazini Unguja,Kaskazini B Town,,Kwagube,KASKAZINI A / MUWANGE (73105),57
+NBS 2022,Kaskazini Unguja,Kaskazini B Town,,Kiongwe Kidogo,KASKAZINI B / ZINGWE ZINGWE (73202),59
+NBS 2022,Kusini Unguja,Kati Town,,Mchangani Shamba,KATI / MCHANGANI (72204),72
+NBS 2022,Kusini Unguja,Kati Town,,Kijibwemtu,KUSINI / KIJINI (72103),50
+NBS 2022,Kusini Unguja,Kati Town,,Zawiyani,KATI / UZINI (72204),62
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Mitiulaya,MJINI / KWAMTIPURA (71113),53
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Saateni,MAGHARIBI / SHAKANI (71215),71
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Mboriborini,MAGHARIBI / MBUZINI (71208),56
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Mapinduzi,MJINI / MALINDI (71103),75
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Maruhubi,MJINI / MATARUMBETA (71108),53
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Masumbani,MJINI / AMANI (71115),71
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Banko,MJINI / MUUNGANO (71110),46
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Kwamtumwajeni,MJINI / KWAMTIPURA (71113),61
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Kwabintiamrani,MJINI / KILIMANI (71105),64
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Kwaalinatu,MJINI / KWAALINATHOO (71108),82
+NBS 2022,Mjini Magharibi,Mjini Municipal,,MwembeMadema,MJINI / MWEMBELADU (71104),73
+NBS 2022,Mjini Magharibi,Mjini Municipal,,Mnazimmoja,MJINI / MKUNAZINI (71101),53
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Kijichi,MJINI / KILIMANI (71105),53
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Chemchem,MAGHARIBI / KIEMBESAMAKI (71214),40
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Kikaangoni,MJINI / MIKUNGUNI (71110),63
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Muembe Mchomeke,MJINI / MWEMBE MAKUMBI (71111),55
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Masingini,MAGHARIBI / MAUNGANI (71213),71
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Mtoni ChemChem,MAGHARIBI / MTONI (71206),53
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Uholanzi,MJINI / GULIONI (71106),53
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Michikichini,MAGHARIBI / KIHINANI (71208),60
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Hawaii,MAGHARIBI / SHAKANI (71215),62
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Munduli,MJINI / MIKUNGUNI (71110),62
+NBS 2022,Mjini Magharibi,Magharibi A Municipal,,Kwa Goa,MAGHARIBI / KIANGA (71212),62
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Mikarafuuni,MJINI / MIKUNGUNI (71110),70
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Jitimai,MJINI / KILIMANI (71105),67
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Sokoni,MJINI / VIKOKOTONI (71103),62
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Taveta,MJINI / MATARUMBETA (71108),59
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Kijitoupele,MAGHARIBI / FUONI KIJITOUPELE (71205),79
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Uzi,MAGHARIBI / MBUZINI (71208),60
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Mnarani,MJINI / AMANI (71115),67
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Muembe Majogoo,MJINI / KISIMA MAJONGOO (71102),62
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Kibondeni,MAGHARIBI / KIBWENI (71207),75
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Uwandani,MJINI / KWAHANI (71107),67
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Chunga,MJINI / MCHANGANI (71103),67
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Mambosasa,MAGHARIBI / MOMBASA (71202),75
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Fuoni Kipungani,MAGHARIBI / FUONI KIBONDENI (71213),73
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Fuoni Migombani,MJINI / MIGOMBANI (71118),75
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Mbweni,MAGHARIBI / KIBWENI (71207),77
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Kwa Mchina,MJINI / KWAALAMSHA (71107),60
+NBS 2022,Mjini Magharibi,Magharibi B Municipal,,Michungwani,MJINI / MCHANGANI (71103),80
+NBS 2022,Kaskazini Pemba,Wete Town,,Mtemani,MICHEWENI / MTEMANI (75206),100
+NBS 2022,Kaskazini Pemba,Micheweni District,,Chamboni,WETE / KAMBINI (75113),67
+NBS 2022,Kaskazini Pemba,Micheweni District,,Shanake,WETE / SHENGEJUU (75115),50
+NBS 2022,Kaskazini Pemba,Micheweni District,,Wingwi Njuguni,MICHEWENI / NJUGUNI (75206),67
+NBS 2022,Kaskazini Pemba,Micheweni District,,Kipange,WETE / KIPANGANI (75101),75
+NBS 2022,Kusini Pemba,Chake Chake Town,,Gombani,MKOANI / NG OMBENI (74101),75
+NBS 2022,Kusini Pemba,Chake Chake Town,,Ole,CHAKE CHAKE / KWALE (74213),50
+NBS 2022,Kusini Pemba,Chake Chake Town,,Mchanga Mrima,MKOANI / CHANGAWENI (74107),61
+NBS 2022,Kusini Pemba,Chake Chake Town,,Mjini Ole,MKOANI / NG OMBENI (74101),44
+NBS 2022,Kusini Pemba,Mkoani Town,,Mwambe,MKOANI / MUAMBE (74113),83
+NBS 2022,Kusini Pemba,Mkoani Town,,Mchakwe,MKOANI / MAKOONGWE (74105),62
+NBS 2022,Kusini Pemba,Mkoani Town,,Chole,CHAKE CHAKE / CHONGA (74217),55

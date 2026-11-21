@@ -1,0 +1,201 @@
+tcra_district_code,tcra_district,nbs_region,nbs_council,nbs_council_type,match_method,score,shared_units,tcra_units,nbs_wards,source
+11,ILALA CBD,Dar es Salaam,Dar es Salaam City,City,fuzzy,33,9,9,36,TCRA / NBS 2022
+12,ILALA,Dar es Salaam,Dar es Salaam City,City,fuzzy,33,27,27,36,TCRA / NBS 2022
+14,KINONDONI,Dar es Salaam,Kinondoni Municipal,Municipal,normalised,100,20,20,20,TCRA / NBS 2022
+15,TEMEKE,Dar es Salaam,Temeke Municipal,Municipal,normalised,100,23,23,23,TCRA / NBS 2022
+16,UBUNGO,Dar es Salaam,Ubungo Municipal,Municipal,normalised,100,14,14,14,TCRA / NBS 2022
+17,KIGAMBONI,Dar es Salaam,Kigamboni Municipal,Municipal,normalised,100,9,9,9,TCRA / NBS 2022
+211,TANGA CBD,Tanga,Tanga City,City,normalised,100,17,17,27,TCRA / NBS 2022
+212,TANGA,Tanga,Tanga City,City,normalised,100,10,10,27,TCRA / NBS 2022
+213,PANGANI,Tanga,Pangani District,District,normalised,100,12,14,14,TCRA / NBS 2022
+214,MUHEZA,Tanga,Muheza District,District,normalised,100,37,37,37,TCRA / NBS 2022
+215,MKINGA,Tanga,Mkinga District,District,normalised,100,22,22,22,TCRA / NBS 2022
+216,KOROGWE,Tanga,Korogwe District,District,normalised,100,28,40,29,TCRA / NBS 2022
+216,KOROGWE,Tanga,Korogwe Town,Town,normalised,100,11,40,11,TCRA / NBS 2022
+217,LUSHOTO,Tanga,Lushoto District,District,normalised,100,33,51,33,TCRA / NBS 2022
+217,LUSHOTO,Tanga,Bumbuli District,District,fuzzy,14,18,51,18,TCRA / NBS 2022
+218,HANDENI,Tanga,Handeni District,District,normalised,100,21,33,21,TCRA / NBS 2022
+218,HANDENI,Tanga,Handeni Town,Town,normalised,100,12,33,12,TCRA / NBS 2022
+219,KILINDI,Tanga,Kilindi District,District,normalised,100,21,21,21,TCRA / NBS 2022
+231,ARUSHA CBD,Arusha,Arusha City,City,normalised,100,23,25,25,TCRA / NBS 2022
+232,ARUSHA,Arusha,Arusha District,District,normalised,100,26,27,27,TCRA / NBS 2022
+233,ARUMERU,Arusha,Meru District,District,fuzzy,73,26,26,26,TCRA / NBS 2022
+234,MONDULI,Arusha,Monduli District,District,normalised,100,20,20,20,TCRA / NBS 2022
+235,LONGIDO,Arusha,Longido District,District,normalised,100,18,18,18,TCRA / NBS 2022
+236,KARATU,Arusha,Karatu District,District,normalised,100,14,14,14,TCRA / NBS 2022
+237,NGORONGORO,Arusha,Ngorongoro District,District,normalised,100,28,28,28,TCRA / NBS 2022
+251,MOSHI CBD,Kilimanjaro,Moshi Municipal,Municipal,normalised,100,20,21,21,TCRA / NBS 2022
+252,MOSHI,Kilimanjaro,Moshi District,District,normalised,100,31,32,32,TCRA / NBS 2022
+253,HAI,Kilimanjaro,Hai District,District,normalised,100,17,17,17,TCRA / NBS 2022
+254,SIHA,Kilimanjaro,Siha District,District,normalised,100,17,17,17,TCRA / NBS 2022
+255,MWANGA,Kilimanjaro,Mwanga District,District,normalised,100,20,20,20,TCRA / NBS 2022
+256,SAME,Kilimanjaro,Same District,District,normalised,100,34,34,34,TCRA / NBS 2022
+257,ROMBO,Kilimanjaro,Rombo District,District,normalised,100,27,27,28,TCRA / NBS 2022
+271,BABATI CBD,Manyara,Babati Town,Town,normalised,100,8,8,8,TCRA / NBS 2022
+272,BABATI,Manyara,Babati District,District,normalised,100,25,25,25,TCRA / NBS 2022
+273,HANANG',Manyara,Hanang District,District,normalised,100,32,33,33,TCRA / NBS 2022
+274,MBULU,Manyara,Mbulu District,District,normalised,100,17,35,18,TCRA / NBS 2022
+274,MBULU,Manyara,Mbulu Town,Town,normalised,100,16,35,17,TCRA / NBS 2022
+275,KITETO,Manyara,Kiteto District,District,normalised,100,23,23,23,TCRA / NBS 2022
+276,SIMANJIRO,Manyara,Simanjiro District,District,normalised,100,17,18,18,TCRA / NBS 2022
+301,GEITA,Geita,Geita District,District,normalised,100,36,49,37,TCRA / NBS 2022
+301,GEITA,Geita,Geita Town,Town,normalised,100,12,49,13,TCRA / NBS 2022
+302,NYANG'HWALE,Geita,Nyang'hwale District,District,normalised,100,15,15,15,TCRA / NBS 2022
+303,CHATO,Geita,Chato District,District,normalised,100,23,23,23,TCRA / NBS 2022
+304,MBOGWE,Geita,Mbogwe District,District,normalised,100,17,17,17,TCRA / NBS 2022
+305,BUKOMBE,Geita,Bukombe District,District,normalised,100,17,17,17,TCRA / NBS 2022
+311,MUSOMA CBD,Mara,Musoma District,District,normalised,100,21,37,21,TCRA / NBS 2022
+311,MUSOMA CBD,Mara,Musoma Municipal,Municipal,normalised,100,16,37,16,TCRA / NBS 2022
+312,BUTIAMA,Mara,Butiama District,District,normalised,100,18,18,18,TCRA / NBS 2022
+313,RORYA,Mara,Rorya District,District,normalised,100,26,26,26,TCRA / NBS 2022
+314,TARIME,Mara,Tarime District,District,normalised,100,26,34,26,TCRA / NBS 2022
+314,TARIME,Mara,Tarime Town,Town,normalised,100,7,34,8,TCRA / NBS 2022
+315,BUNDA,Mara,Bunda District,District,normalised,100,19,32,19,TCRA / NBS 2022
+315,BUNDA,Mara,Bunda Town,Town,normalised,100,13,32,14,TCRA / NBS 2022
+316,SERENGETI,Mara,Serengeti District,District,normalised,100,30,31,30,TCRA / NBS 2022
+331,NYAMAGANA,Mwanza,Mwanza City,City,fuzzy,53,18,18,18,TCRA / NBS 2022
+332,ILEMELA,Mwanza,Ilemela Municipal,Municipal,normalised,100,19,19,19,TCRA / NBS 2022
+333,SENGEREMA,Mwanza,Sengerema District,District,normalised,100,26,47,26,TCRA / NBS 2022
+333,SENGEREMA,Mwanza,Buchosa District,District,fuzzy,25,20,47,21,TCRA / NBS 2022
+334,MAGU,Mwanza,Magu District,District,normalised,100,25,25,25,TCRA / NBS 2022
+335,MISUNGWI,Mwanza,Misungwi District,District,normalised,100,26,27,27,TCRA / NBS 2022
+336,UKEREWE,Mwanza,Ukerewe District,District,normalised,100,25,25,25,TCRA / NBS 2022
+338,KWIMBA,Mwanza,Kwimba District,District,normalised,100,30,30,30,TCRA / NBS 2022
+351,BUKOBA CBD,Kagera,Bukoba Municipal,Municipal,normalised,100,13,14,14,TCRA / NBS 2022
+352,BUKOBA,Kagera,Bukoba District,District,normalised,100,29,29,29,TCRA / NBS 2022
+353,MISSENYI,Kagera,Missenyi District,District,normalised,100,20,20,20,TCRA / NBS 2022
+354,KARAGWE,Kagera,Karagwe District,District,normalised,100,23,26,23,TCRA / NBS 2022
+355,MULEBA,Kagera,Muleba District,District,normalised,100,43,43,43,TCRA / NBS 2022
+356,BIHARAMULO,Kagera,Biharamulo District,District,normalised,100,17,17,17,TCRA / NBS 2022
+357,NGARA,Kagera,Ngara District,District,normalised,100,22,22,22,TCRA / NBS 2022
+358,KYERWA,Kagera,Kyerwa District,District,normalised,100,24,24,24,TCRA / NBS 2022
+371,SHINYANGA CBD,Shinyanga,Shinyanga Municipal,Municipal,normalised,100,17,17,17,TCRA / NBS 2022
+372,SHINYANGA,Shinyanga,Shinyanga District,District,normalised,100,26,26,26,TCRA / NBS 2022
+373,KAHAMA,Shinyanga,Kahama Municipal,Municipal,normalised,100,20,58,20,TCRA / NBS 2022
+373,KAHAMA,Shinyanga,Ushetu District,District,fuzzy,17,20,58,20,TCRA / NBS 2022
+373,KAHAMA,Shinyanga,Msalala District,District,fuzzy,46,18,58,18,TCRA / NBS 2022
+375,KISHAPU,Shinyanga,Kishapu District,District,normalised,100,28,29,29,TCRA / NBS 2022
+391,BARIADI,Simiyu,Bariadi District,District,normalised,100,20,31,21,TCRA / NBS 2022
+391,BARIADI,Simiyu,Bariadi Town,Town,normalised,100,10,31,10,TCRA / NBS 2022
+392,ITILIMA,Simiyu,Itilima District,District,normalised,100,22,22,22,TCRA / NBS 2022
+393,MASWA,Simiyu,Maswa District,District,normalised,100,36,36,36,TCRA / NBS 2022
+394,MEATU,Simiyu,Meatu District,District,normalised,100,29,29,29,TCRA / NBS 2022
+395,BUSEGA,Simiyu,Busega District,District,normalised,100,15,15,15,TCRA / NBS 2022
+411,DODOMA CBD,Dodoma,Dodoma City,City,normalised,100,20,20,41,TCRA / NBS 2022
+412,DODOMA,Dodoma,Dodoma City,City,normalised,100,21,21,41,TCRA / NBS 2022
+413,BAHI,Dodoma,Bahi District,District,normalised,100,22,22,22,TCRA / NBS 2022
+414,CHAMWINO,Dodoma,Chamwino District,District,normalised,100,36,36,36,TCRA / NBS 2022
+415,KONGWA,Dodoma,Kongwa District,District,normalised,100,22,22,22,TCRA / NBS 2022
+416,MPWAPWA,Dodoma,Mpwapwa District,District,normalised,100,33,33,33,TCRA / NBS 2022
+417,KONDOA,Dodoma,Kondoa District,District,normalised,100,21,29,21,TCRA / NBS 2022
+417,KONDOA,Dodoma,Kondoa Town,Town,normalised,100,8,29,8,TCRA / NBS 2022
+418,CHEMBA,Dodoma,Chemba District,District,normalised,100,26,26,26,TCRA / NBS 2022
+431,SINGIDA CBD,Singida,Singida Municipal,Municipal,normalised,100,18,18,18,TCRA / NBS 2022
+432,SINGIDA,Singida,Singida District,District,normalised,100,21,21,21,TCRA / NBS 2022
+433,IRAMBA,Singida,Iramba District,District,normalised,100,20,20,20,TCRA / NBS 2022
+434,MANYONI,Singida,Manyoni District,District,normalised,100,18,32,19,TCRA / NBS 2022
+434,MANYONI,Singida,Itigi District,District,fuzzy,17,13,32,13,TCRA / NBS 2022
+435,MKALAMA,Singida,Mkalama District,District,normalised,100,17,17,17,TCRA / NBS 2022
+436,IKUNGI,Singida,Ikungi District,District,normalised,100,28,28,28,TCRA / NBS 2022
+451,TABORA CBD,Tabora,Tabora Municipal,Municipal,normalised,100,29,29,29,TCRA / NBS 2022
+452,UYUI,Tabora,Uyui District,District,normalised,100,30,30,30,TCRA / NBS 2022
+453,SIKONGE,Tabora,Sikonge District,District,normalised,100,20,20,20,TCRA / NBS 2022
+454,NZEGA,Tabora,Nzega District,District,normalised,100,36,46,36,TCRA / NBS 2022
+454,NZEGA,Tabora,Nzega Town,Town,normalised,100,10,46,10,TCRA / NBS 2022
+455,URAMBO,Tabora,Urambo District,District,normalised,100,18,18,18,TCRA / NBS 2022
+456,IGUNGA,Tabora,Igunga District,District,normalised,100,35,35,35,TCRA / NBS 2022
+457,KALIUA,Tabora,Kaliua District,District,normalised,100,28,28,28,TCRA / NBS 2022
+471,KIGOMA CBD,Kigoma,Kigoma Municipal,Municipal,normalised,100,19,19,19,TCRA / NBS 2022
+472,KIGOMA,Kigoma,Kigoma District,District,normalised,100,10,11,16,TCRA / NBS 2022
+473,KASULU,Kigoma,Kasulu District,District,normalised,100,19,27,21,TCRA / NBS 2022
+473,KASULU,Kigoma,Kasulu Town,Town,normalised,100,7,27,15,TCRA / NBS 2022
+474,KIBONDO,Kigoma,Kibondo District,District,normalised,100,11,11,19,TCRA / NBS 2022
+475,BUHIGWE,Kigoma,Buhigwe District,District,normalised,100,15,17,20,TCRA / NBS 2022
+476,UVINZA,Kigoma,Uvinza District,District,normalised,100,8,9,16,TCRA / NBS 2022
+477,KAKONKO,Kigoma,Kakonko District,District,normalised,100,9,9,13,TCRA / NBS 2022
+501,MPANDA -CBD,Katavi,Mpanda Municipal,Municipal,normalised,100,15,27,15,TCRA / NBS 2022
+501,MPANDA -CBD,Katavi,Nsimbo District,District,fuzzy,17,11,27,12,TCRA / NBS 2022
+502,TANGANYIKA,Katavi,Tanganyika District,District,normalised,100,16,16,16,TCRA / NBS 2022
+503,MLELE,Katavi,Mpimbwe District,District,fuzzy,33,9,15,9,TCRA / NBS 2022
+503,MLELE,Katavi,Mlele District,District,normalised,100,6,15,6,TCRA / NBS 2022
+511,IRINGA CBD,Iringa,Iringa Municipal,Municipal,normalised,100,18,18,18,TCRA / NBS 2022
+512,IRINGA,Iringa,Iringa District,District,normalised,100,28,28,28,TCRA / NBS 2022
+513,KILOLO,Iringa,Kilolo District,District,normalised,100,24,24,24,TCRA / NBS 2022
+514,MUFINDI,Iringa,Mufindi District,District,normalised,100,27,36,27,TCRA / NBS 2022
+514,MUFINDI,Iringa,Mafinga Town,Town,fuzzy,57,9,36,9,TCRA / NBS 2022
+531,MBEYA CBD,Mbeya,Mbeya City,City,normalised,100,36,36,36,TCRA / NBS 2022
+532,MBEYA,Mbeya,Mbeya District,District,normalised,100,28,28,28,TCRA / NBS 2022
+535,RUNGWE,Mbeya,Rungwe District,District,normalised,100,29,42,29,TCRA / NBS 2022
+535,RUNGWE,Mbeya,Busokelo District,District,fuzzy,29,13,42,13,TCRA / NBS 2022
+536,MBARALI,Mbeya,Mbarali District,District,normalised,100,20,20,20,TCRA / NBS 2022
+537,KYELA,Mbeya,Kyela District,District,normalised,100,33,33,33,TCRA / NBS 2022
+538,CHUNYA,Mbeya,Chunya District,District,normalised,100,20,20,20,TCRA / NBS 2022
+541,SONGWE,Songwe,Songwe District,District,normalised,100,17,17,18,TCRA / NBS 2022
+542,MBOZI,Songwe,Mbozi District,District,normalised,100,26,29,29,TCRA / NBS 2022
+543,ILEJE,Songwe,Ileje District,District,normalised,100,18,18,18,TCRA / NBS 2022
+544,MOMBA,Songwe,Tunduma Town,Town,fuzzy,33,15,29,15,TCRA / NBS 2022
+544,MOMBA,Songwe,Momba District,District,normalised,100,14,29,14,TCRA / NBS 2022
+551,SUMBAWANGA CBD,Rukwa,Sumbawanga Municipal,Municipal,normalised,100,19,19,19,TCRA / NBS 2022
+552,SUMBAWANGA,Rukwa,Sumbawanga District,District,normalised,100,27,27,27,TCRA / NBS 2022
+553,NKASI,Rukwa,Nkasi District,District,normalised,100,26,28,28,TCRA / NBS 2022
+554,KALAMBO,Rukwa,Kalambo District,District,normalised,100,23,23,23,TCRA / NBS 2022
+571,SONGEA CBD,Ruvuma,Songea Municipal,Municipal,normalised,100,21,21,21,TCRA / NBS 2022
+572,SONGEA,Ruvuma,Songea District,District,normalised,100,15,23,16,TCRA / NBS 2022
+572,SONGEA,Ruvuma,Madaba District,District,fuzzy,17,7,23,8,TCRA / NBS 2022
+573,NAMTUMBO,Ruvuma,Namtumbo District,District,normalised,100,21,21,21,TCRA / NBS 2022
+574,MBINGA,Ruvuma,Mbinga District,District,normalised,100,29,48,29,TCRA / NBS 2022
+574,MBINGA,Ruvuma,Mbinga Town,Town,normalised,100,19,48,19,TCRA / NBS 2022
+575,NYASA,Ruvuma,Nyasa District,District,normalised,100,20,20,20,TCRA / NBS 2022
+576,TUNDURU,Ruvuma,Tunduru District,District,normalised,100,39,39,39,TCRA / NBS 2022
+577,MADABA,Ruvuma,Madaba District,District,normalised,100,1,1,8,TCRA / NBS 2022
+591,NJOMBE CBD,Njombe,Njombe Town,Town,normalised,100,13,25,13,TCRA / NBS 2022
+591,NJOMBE CBD,Njombe,Makambako Town,Town,fuzzy,27,12,25,12,TCRA / NBS 2022
+592,NJOMBE,Njombe,Njombe District,District,normalised,100,12,12,12,TCRA / NBS 2022
+593,WANGING'O MBE,Njombe,Wanging'ombe District,District,normalised,100,21,21,21,TCRA / NBS 2022
+594,LUDEWA,Njombe,Ludewa District,District,normalised,100,26,26,26,TCRA / NBS 2022
+595,MAKETE,Njombe,Makete District,District,normalised,100,23,23,23,TCRA / NBS 2022
+611,KIBAHA CBD,Pwani,Kibaha Town,Town,normalised,100,14,14,14,TCRA / NBS 2022
+612,KIBAHA,Pwani,Kibaha District,District,normalised,100,14,14,14,TCRA / NBS 2022
+613,BAGAMOYO,Pwani,Chalinze District,District,fuzzy,12,15,26,15,TCRA / NBS 2022
+613,BAGAMOYO,Pwani,Bagamoyo District,District,normalised,100,11,26,11,TCRA / NBS 2022
+614,KISARAWE,Pwani,Kisarawe District,District,normalised,100,17,17,17,TCRA / NBS 2022
+615,MKURANGA,Pwani,Mkuranga District,District,normalised,100,25,25,25,TCRA / NBS 2022
+616,RUFIJI,Pwani,Rufiji District,District,normalised,100,13,14,13,TCRA / NBS 2022
+617,MAFIA,Pwani,Mafia District,District,normalised,100,8,8,8,TCRA / NBS 2022
+618,KIBITI,Pwani,Kibiti District,District,normalised,100,15,15,16,TCRA / NBS 2022
+631,MTWARA CBD,Mtwara,Mtwara Municipal,Municipal,normalised,100,18,18,18,TCRA / NBS 2022
+632,MTWARA,Mtwara,Mtwara District,District,normalised,100,21,38,21,TCRA / NBS 2022
+632,MTWARA,Mtwara,Nanyamba Town,Town,fuzzy,29,17,38,17,TCRA / NBS 2022
+633,TANDAHIMBA,Mtwara,Tandahimba District,District,normalised,100,30,32,32,TCRA / NBS 2022
+634,NEWALA,Mtwara,Newala District,District,normalised,100,22,38,22,TCRA / NBS 2022
+634,NEWALA,Mtwara,Newala Town,Town,normalised,100,16,38,16,TCRA / NBS 2022
+635,MASASI,Mtwara,Masasi District,District,normalised,100,33,48,34,TCRA / NBS 2022
+635,MASASI,Mtwara,Masasi Town,Town,normalised,100,14,48,14,TCRA / NBS 2022
+636,NANYUMBU,Mtwara,Nanyumbu District,District,normalised,100,16,17,17,TCRA / NBS 2022
+651,LINDI CBD,Lindi,Lindi Municipal,Municipal,normalised,100,20,20,31,TCRA / NBS 2022
+652,LINDI,Lindi,Mtama District,District,fuzzy,0,20,32,20,TCRA / NBS 2022
+652,LINDI,Lindi,Lindi Municipal,Municipal,normalised,100,11,32,31,TCRA / NBS 2022
+653,NACHINGWEA,Lindi,Nachingwea District,District,normalised,100,36,36,36,TCRA / NBS 2022
+654,KILWA,Lindi,Kilwa District,District,normalised,100,20,23,23,TCRA / NBS 2022
+655,LIWALE,Lindi,Liwale District,District,normalised,100,20,20,20,TCRA / NBS 2022
+656,RUANGWA,Lindi,Ruangwa District,District,normalised,100,22,22,22,TCRA / NBS 2022
+671,MOROGORO CBD,Morogoro,Morogoro Municipal,Municipal,normalised,100,29,29,29,TCRA / NBS 2022
+672,MOROGORO,Morogoro,Morogoro District,District,normalised,100,30,31,31,TCRA / NBS 2022
+673,MVOMERO,Morogoro,Mvomero District,District,normalised,100,29,30,30,TCRA / NBS 2022
+674,KILOSA,Morogoro,Kilosa District,District,normalised,100,40,40,40,TCRA / NBS 2022
+675,KILOMBERO,Morogoro,Ifakara Town,Town,fuzzy,25,19,35,19,TCRA / NBS 2022
+675,KILOMBERO,Morogoro,Mlimba District,District,fuzzy,40,16,35,16,TCRA / NBS 2022
+676,ULANGA,Morogoro,Ulanga District,District,normalised,100,21,21,21,TCRA / NBS 2022
+677,GAIRO,Morogoro,Gairo District,District,normalised,100,18,18,18,TCRA / NBS 2022
+678,MALINYI,Morogoro,Malinyi District,District,normalised,100,10,10,10,TCRA / NBS 2022
+711,MJINI,Mjini Magharibi,Mjini Municipal,Municipal,normalised,100,44,45,56,TCRA / NBS 2022
+712,MAGHARIBI,Mjini Magharibi,Magharibi A Municipal,Municipal,fuzzy,80,20,39,31,TCRA / NBS 2022
+712,MAGHARIBI,Mjini Magharibi,Magharibi B Municipal,Municipal,fuzzy,80,17,39,34,TCRA / NBS 2022
+721,KUSINI,Kusini Unguja,Kusini District,District,normalised,100,20,21,21,TCRA / NBS 2022
+722,KATI,Kusini Unguja,Kati Town,Town,normalised,100,38,40,42,TCRA / NBS 2022
+731,KASKAZINI A,Kaskazini Unguja,Kaskazini A Town,Town,normalised,100,28,33,44,TCRA / NBS 2022
+732,KASKAZINI B,Kaskazini Unguja,Kaskazini B Town,Town,normalised,100,26,29,31,TCRA / NBS 2022
+741,MKOANI,Kusini Pemba,Mkoani Town,Town,normalised,100,32,33,36,TCRA / NBS 2022
+742,CHAKE CHAKE,Kusini Pemba,Chake Chake Town,Town,normalised,100,28,29,32,TCRA / NBS 2022
+751,WETE,Kaskazini Pemba,Wete Town,Town,normalised,100,30,32,36,TCRA / NBS 2022
+752,MICHEWENI,Kaskazini Pemba,Micheweni District,District,normalised,100,21,27,25,TCRA / NBS 2022

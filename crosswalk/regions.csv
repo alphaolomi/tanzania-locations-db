@@ -1,0 +1,32 @@
+tcra_region_code,tcra_region,nbs_region,nbs_zone,match_method,score,source
+11,DAR-ES-SALAAM,Dar es Salaam,mainland,normalised,100,TCRA / NBS 2022
+21,TANGA,Tanga,mainland,exact,100,TCRA / NBS 2022
+23,ARUSHA,Arusha,mainland,exact,100,TCRA / NBS 2022
+25,KILIMANJARO,Kilimanjaro,mainland,exact,100,TCRA / NBS 2022
+27,MANYARA,Manyara,mainland,exact,100,TCRA / NBS 2022
+30,GEITA,Geita,mainland,exact,100,TCRA / NBS 2022
+31,MARA,Mara,mainland,exact,100,TCRA / NBS 2022
+33,MWANZA,Mwanza,mainland,exact,100,TCRA / NBS 2022
+35,KAGERA,Kagera,mainland,exact,100,TCRA / NBS 2022
+37,SHINYANGA,Shinyanga,mainland,exact,100,TCRA / NBS 2022
+39,SIMIYU,Simiyu,mainland,exact,100,TCRA / NBS 2022
+41,DODOMA,Dodoma,mainland,exact,100,TCRA / NBS 2022
+43,SINGIDA,Singida,mainland,exact,100,TCRA / NBS 2022
+45,TABORA,Tabora,mainland,exact,100,TCRA / NBS 2022
+47,KIGOMA,Kigoma,mainland,exact,100,TCRA / NBS 2022
+50,KATAVI,Katavi,mainland,exact,100,TCRA / NBS 2022
+51,IRINGA,Iringa,mainland,exact,100,TCRA / NBS 2022
+53,MBEYA,Mbeya,mainland,exact,100,TCRA / NBS 2022
+54,SONGWE,Songwe,mainland,exact,100,TCRA / NBS 2022
+55,RUKWA,Rukwa,mainland,exact,100,TCRA / NBS 2022
+57,RUVUMA,Ruvuma,mainland,exact,100,TCRA / NBS 2022
+59,NJOMBE,Njombe,mainland,exact,100,TCRA / NBS 2022
+61,PWANI,Pwani,mainland,exact,100,TCRA / NBS 2022
+63,MTWARA,Mtwara,mainland,exact,100,TCRA / NBS 2022
+65,LINDI,Lindi,mainland,exact,100,TCRA / NBS 2022
+67,MOROGORO,Morogoro,mainland,exact,100,TCRA / NBS 2022
+71,MJINI MAGHARIBI,Mjini Magharibi,zanzibar,exact,100,TCRA / NBS 2022
+72,KUSINI UNGUJA,Kusini Unguja,zanzibar,exact,100,TCRA / NBS 2022
+73,KASKAZINI UNGUJA,Kaskazini Unguja,zanzibar,exact,100,TCRA / NBS 2022
+74,KUSINI PEMBA,Kusini Pemba,zanzibar,exact,100,TCRA / NBS 2022
+75,KASKAZINI PEMBA,Kaskazini Pemba,zanzibar,exact,100,TCRA / NBS 2022

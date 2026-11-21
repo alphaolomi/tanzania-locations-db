@@ -22,6 +22,15 @@ jobs:
           persist-credentials: false
       - name: Validate the CSVs (fails on problems not in the baseline)
         run: python3 scripts/validate_csv.py
+      - name: Check the Zanzibar CSVs match their source
+        run: python3 scripts/build_zanzibar.py --check
+      - name: Validate the NBS 2022 sources and the crosswalk
+        run: python3 scripts/validate_sources.py
+      - name: Check the crosswalk is what the script builds
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install --quiet rapidfuzz==3.14.6
+          "$RUNNER_TEMP/venv/bin/python" -I scripts/build_crosswalk.py --check
 
   lint:
     runs-on: ubuntu-24.04
@@ -73,11 +82,20 @@ jobs:
             got=$(q "SELECT COUNT(*) FROM $1;")
             if [ "$got" = "$2" ]; then echo "ok   $1 = $got"; else echo "FAIL $1 = $got, expected $2"; fail=1; fi
           }
-          check regions 26
-          check districts 158
-          check wards 3945
-          check general 68571
-          check places 75019
+          # Mainland (26 regions) plus Zanzibar (5 regions, codes 71 to 75). See the README for the changes.
+          check countries 252
+          check regions 31
+          check districts 169
+          check wards 4061
+          check general 68775
+          check places 75326
+          check sources 5
+          check nbs_regions 31
+          check nbs_councils 195
+          check nbs_wards 4344
+          check crosswalk_regions 31
+          check crosswalk_districts 200
+          check crosswalk_wards 4190
           exit $fail
 
   scan:
@@ -88,7 +106,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Build the image
-        run: docker build -t tanzania-geography:ci .
+        run: docker build -t tanzania-locations:ci .
       - name: Trivy scan (fails on fixable CRITICAL vulnerabilities)
         run: |
-          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock             -v "$PWD/.trivyignore:/work/.trivyignore:ro"             aquasec/trivy@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c             image --severity CRITICAL --ignore-unfixed --exit-code 1 --no-progress             --ignorefile /work/.trivyignore tanzania-geography:ci # 0.76.1
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock             -v "$PWD/.trivyignore:/work/.trivyignore:ro"             aquasec/trivy@sha256:790fd66d1697395d8693d1acaa1ea702406a20f109b6fc7bac8db623eca6c06c             image --severity CRITICAL --ignore-unfixed --exit-code 1 --no-progress             --ignorefile /work/.trivyignore tanzania-locations:ci # 0.76.1
